@@ -8,9 +8,10 @@ import { toast } from 'react-toastify';
 function Home() {
     const [todos, setTodos] = useState(null);
     const [formData, setFormData] = useState({ name: '' });
-    const [user, setUser] = useState(null)
+    const [user, setUser] = useState(null);
+    
     useEffect(() => {
-        document.title = "Home";
+        document.title = "CW Todo | Home";
         // reloadTodos();
     }, [])
 
@@ -110,7 +111,6 @@ function Home() {
                         </ul>
                     </div>
                 </div>
-
             </div>
 
             <div className="modal fade" id="addTodoModal" tabIndex="-1" aria-labelledby="addTodoModal" aria-hidden="true">

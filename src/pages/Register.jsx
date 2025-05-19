@@ -8,6 +8,10 @@ export default function Login() {
         password: ''
     });
 
+    useEffect(() => {
+        document.title = "CW Todo | Register";
+        // reloadTodos();
+    }, []);
 
     const handleChange = (e) => {
         const {name, value} = e.target;
